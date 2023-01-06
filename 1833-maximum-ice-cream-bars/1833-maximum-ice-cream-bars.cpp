@@ -8,6 +8,9 @@ public:
                 coins=coins-costs[i];
                 count++;
             }
+            else{
+                return count;
+            }
         }
         return count;
     }
