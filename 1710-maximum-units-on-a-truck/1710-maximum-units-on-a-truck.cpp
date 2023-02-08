@@ -5,7 +5,6 @@ public:
     }
     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
         sort(boxTypes.begin(),boxTypes.end(),cmp);
-        int giv_cap=truckSize;
         int curr_cap=truckSize;
         int ans=0;
         for(int i=0;i<boxTypes.size();i++){
