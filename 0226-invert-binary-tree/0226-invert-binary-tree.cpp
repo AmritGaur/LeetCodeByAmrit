@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    void tree(TreeNode* &root){
+    /*void tree(TreeNode* &root){
     if(root==NULL){
             return;
         }
@@ -21,9 +21,15 @@ public:
         tree(root->left);
         tree(root->right);
         return;
-    }
+    }*/
     TreeNode* invertTree(TreeNode* root) {
-        tree(root);
-        return root;
+        /*tree(root);
+        return root;*/
+        if(root == NULL) return root;
+       swap(root->left, root->right);
+       invertTree(root->left);
+       invertTree(root->right);
+
+       return root;
     }
 };
