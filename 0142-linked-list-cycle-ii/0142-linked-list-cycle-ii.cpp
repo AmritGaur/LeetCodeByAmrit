@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        if(!head || !head->next || !head->next->next){
+        if(!head || !head->next || !head->next->next || !head->next->next->next){
             return NULL;
         }
         ListNode* slow=head;
