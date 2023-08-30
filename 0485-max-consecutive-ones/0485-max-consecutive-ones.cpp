@@ -9,6 +9,16 @@ public:
                 return 0;
             }
         }
+        int x=0;
+        for(int i=0;i<nums.size();i++){
+            x+=nums[i];
+        }
+        if(x==0){
+            return 0;
+        }
+        if(x==nums.size()){
+            return x;
+        }
         int ans=0;
         int lc=0;
         for(int i=0;i<nums.size();i++){
